@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 html{
     font-size: 16px;
 }
@@ -35,6 +37,7 @@ h6{
 /* clases predefinidas */
 * {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body{
@@ -84,6 +87,34 @@ body{
 }
 
 /* Otras clases */
+.centrado{
+    text-align: center;
+}
+
+.padding-m{
+    padding: 2.5%;
+}
+
+img{
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: transform .4s;
+}
+
+h1:hover{
+    color: red;
+}
+
+.github{
+    text-decoration: none;
+    color: green;
+}
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 .flex{
     display: flex;
@@ -103,5 +134,9 @@ body{
     /* column-4 pasará de tener 25% a 50% */
     .column-4{
         width: 50%;
+    }
+
+    img{
+        height: 50vw;
     }
 }
